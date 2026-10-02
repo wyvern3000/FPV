@@ -1,8 +1,8 @@
-# FPV
+# FPV [中文介绍](https://github.com/wyvern3000/FPV/edit/main/README.md)
 
 An Android video player built on libmpv. Plays media from local storage, WebDAV, FTP/FTPS, SMB and IPTV sources.
 
-Version 0.5.0 ｜ Requires Android 8.0 (API 26) or later ｜ arm64-v8a
+Requires Android 8.0 (API 26) or later ｜ arm64-v8a
 
 No ads, no account, no data collection.
 
@@ -113,7 +113,7 @@ JPEG, PNG, BMP, GIF, QOI, PAM / PBM / PGM / PPM
 
 ## Installation
 
-1. Download `app-release.apk`
+1. Download apk
 2. Install it on the device (allow "install unknown apps" the first time)
 
 Only an arm64-v8a build is provided.
@@ -141,25 +141,6 @@ In the Browser root, tap the **plus** button, choose Local, and navigate to your
 - The **playlist** button in the player toolbar opens the queue
 - Leaving mid-playback records the position; the next open resumes from it
 - The **back to player** button in the Browser toolbar returns to the current video, IPTV channels included
-
----
-
-## FAQ
-
-**Why does it need storage permission?**
-To read the local folders you select, cache video thumbnails, and export crash logs.
-
-**WebDAV or FTP playback stutters.**
-Settings → Player lets you raise the network buffer. For WebDAV, enable parallel download to transfer in multiple chunks over several connections.
-
-**An IPTV channel will not open, or spins indefinitely.**
-First check the M3U address in a desktop player. If only the first entry into the list is slow, the playlist service is likely generating the list.
-
-**The picture is stretched or cropped.**
-The **aspect ratio** button in the player toolbar cycles through fit / crop / stretch.
-
-**How do I report a problem?**
-Settings → About, then double-tap the app icon to enable debug mode. Crash logs are written to `Downloads/FPV_Logs/`.
 
 ---
 
