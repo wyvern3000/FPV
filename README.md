@@ -1,4 +1,4 @@
-# FPV  [English](https://github.com/wyvern3000/FPV/edit/main/README.en.md)
+# FPV  [English](https://github.com/wyvern3000/FPV/blob/main/README.en.md)
 
 Android 视频播放器，播放内核为 libmpv。支持本地存储、WebDAV、FTP/FTPS、SMB、IPTV 五类来源。
 
