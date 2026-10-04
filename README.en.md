@@ -1,4 +1,4 @@
-# FPV [中文介绍](https://github.com/wyvern3000/FPV/edit/main/README.md)
+# FPV [中文介绍](https://github.com/wyvern3000/FPV/blob/main/README.md)
 
 An Android video player built on libmpv. Plays media from local storage, WebDAV, FTP/FTPS, SMB and IPTV sources.
 
