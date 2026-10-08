@@ -83,17 +83,17 @@ Android 视频播放器，播放内核为 libmpv。支持本地存储、WebDAV�
 
 ## 支持的格式
 
-### 容器
+### 可直接浏览与播放的文件类型
 
-MP4、M4V、MOV、MKV、WebM、AVI、MPEG-TS、M2TS、MPEG-PS、VOB、FLV、F4V、WMV、ASF、RM、RMVB、OGG、3GP、3G2、MXF、DV、WTV、AIFF、CAF、WAV、FLAC、APE、Musepack、WavPack、TTA、AMR、AAC、AC3、DTS、TrueHD、HLS (m3u8)、MPEG-DASH (mpd)
+MP4、M4V、MOV、MKV、WebM、AVI、MPEG-TS（ts / m2ts / mts / m2t）、MPEG-PS（mpg / mpeg / mpe）、VOB、FLV、F4V、WMV、ASF、RM、RMVB、OGV、3GP、3G2、MXF、GXF、DV、QT、AMV、DIVX、MP4V、M1V、M2V、MPV、ISMV、M4P、M4B，以及 `.strm` 占位文件。
 
-### 视频编码
+HLS（m3u8）与 MPEG-DASH（mpd）通过「打开 URL」或 IPTV 来源播放，不作为本地文件浏览。
 
-H.264 / AVC、H.265 / HEVC、H.266 / VVC、AV1、VP8、VP9、MPEG-1、MPEG-2、MPEG-4（Xvid / DivX）、H.263、VC-1、WMV1 / WMV2 / WMV3、MS-MPEG4、RealVideo 1 / 2 / 3 / 4（RMVB）、Theora、MJPEG、ProRes、DNxHD、CineForm、DV、Cinepak、Sorenson 1 / 3、AVS / CAVS、无损编码（FFV1、HuffYUV、Ut Video、Lagarith、MagicYUV）
+### 支持的编码
 
-### 音频编码
+**视频**：H.264 / AVC、H.265 / HEVC、H.266 / VVC、AV1、VP8、VP9、MPEG-1、MPEG-2、MPEG-4（Xvid / DivX）、H.263、VC-1、WMV1 / WMV2 / WMV3、MS-MPEG4、RealVideo 1 / 2 / 3 / 4（RMVB）、Theora、MJPEG、ProRes、DNxHD、CineForm、DV、Cinepak、Sorenson 1 / 3、AVS / CAVS、无损编码（FFV1、HuffYUV、Ut Video、Lagarith、MagicYUV）
 
-AAC、AAC-LATM、MP1 / MP2 / MP3、AC-3、E-AC-3、AC-4、DTS、DTS-HD、TrueHD、MLP、FLAC、ALAC、APE、Vorbis、Opus、WMA v1 / v2 / Pro / Lossless / Voice、WavPack、TTA、Musepack (MPC7 / MPC8)、Shorten、TAK、RealAudio（Cook、RA-144、RA-288、ATRAC）、AMR-NB / AMR-WB、Speex、Nellymoser、QDM2、S302M、PCM 全系列（含 LPCM / Blu-ray / DVD）、ADPCM 系列
+**音频**：AAC、AAC-LATM、MP1 / MP2 / MP3、AC-3、E-AC-3、AC-4、DTS、DTS-HD、TrueHD、MLP、FLAC、ALAC、APE、Vorbis、Opus、WMA v1 / v2 / Pro / Lossless / Voice、WavPack、TTA、Musepack (MPC7 / MPC8)、Shorten、TAK、RealAudio（Cook、RA-144、RA-288、ATRAC）、AMR-NB / AMR-WB、Speex、Nellymoser、QDM2、S302M、PCM 全系列（含 LPCM / Blu-ray / DVD）、ADPCM 系列
 
 ### 字幕
 
@@ -103,9 +103,9 @@ SubRip (SRT)、ASS、SSA、WebVTT、MOV text、MicroDVD、MPL2、SAMI、RealText
 
 HTTP、HTTPS、HLS、MPEG-DASH、RTMP、RTMPS、RTMPE、RTP、SRTP、UDP、FTP、AES-128 加密 HLS
 
-### 图片
+### 不在浏览范围内的格式
 
-JPEG、PNG、BMP、GIF、QOI、PAM / PBM / PGM / PPM
+播放内核还能解码**纯音频文件**（FLAC、APE、WAV、AIFF、CAF、MP3、AC-3、DTS 等）与**图片**（JPEG、PNG、BMP、GIF、QOI、PAM / PBM / PGM / PPM）。FPV 是一款视频播放器，此类文件置灰，无法点击播放。
 
 ---
 
