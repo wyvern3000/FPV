@@ -85,17 +85,21 @@ All four network source types support reading in place: thumbnails, resume posit
 
 ## Supported formats
 
-### Containers
+### Browsable and playable
 
-MP4, M4V, MOV, MKV, WebM, AVI, MPEG-TS, M2TS, MPEG-PS, VOB, FLV, F4V, WMV, ASF, RM, RMVB, OGG, 3GP, 3G2, MXF, DV, WTV, AIFF, CAF, WAV, FLAC, APE, Musepack, WavPack, TTA, AMR, AAC, AC3, DTS, TrueHD, HLS (m3u8), MPEG-DASH (mpd)
+File types that can be tapped and played in the browser (extension matching is case-insensitive):
 
-### Video codecs
+MP4, M4V, MOV, MKV, WebM, AVI, MPEG-TS (ts / m2ts / mts / m2t), MPEG-PS (mpg / mpeg / mpe), VOB, FLV, F4V, WMV, ASF, RM, RMVB, OGV, 3GP, 3G2, MXF, GXF, DV, QT, AMV, DIVX, MP4V, M1V, M2V, MPV, ISMV, M4P, M4B, plus `.strm` placeholder files.
 
-H.264 / AVC, H.265 / HEVC, H.266 / VVC, AV1, VP8, VP9, MPEG-1, MPEG-2, MPEG-4 (Xvid / DivX), H.263, VC-1, WMV1 / WMV2 / WMV3, MS-MPEG4, RealVideo 1 / 2 / 3 / 4 (RMVB), Theora, MJPEG, ProRes, DNxHD, CineForm, DV, Cinepak, Sorenson 1 / 3, AVS / CAVS, lossless codecs (FFV1, HuffYUV, Ut Video, Lagarith, MagicYUV)
+HLS (m3u8) and MPEG-DASH (mpd) play through "Open URL" or an IPTV source, not as browsable local files.
 
-### Audio codecs
+### Codecs inside video files
 
-AAC, AAC-LATM, MP1 / MP2 / MP3, AC-3, E-AC-3, AC-4, DTS, DTS-HD, TrueHD, MLP, FLAC, ALAC, APE, Vorbis, Opus, WMA v1 / v2 / Pro / Lossless / Voice, WavPack, TTA, Musepack (MPC7 / MPC8), Shorten, TAK, RealAudio (Cook, RA-144, RA-288, ATRAC), AMR-NB / AMR-WB, Speex, Nellymoser, QDM2, S302M, the full PCM family (including LPCM / Blu-ray / DVD), ADPCM variants
+These are the codecs of the **tracks inside** a video file - as long as the file itself plays, its tracks decode.
+
+**Video**: H.264 / AVC, H.265 / HEVC, H.266 / VVC, AV1, VP8, VP9, MPEG-1, MPEG-2, MPEG-4 (Xvid / DivX), H.263, VC-1, WMV1 / WMV2 / WMV3, MS-MPEG4, RealVideo 1 / 2 / 3 / 4 (RMVB), Theora, MJPEG, ProRes, DNxHD, CineForm, DV, Cinepak, Sorenson 1 / 3, AVS / CAVS, lossless codecs (FFV1, HuffYUV, Ut Video, Lagarith, MagicYUV)
+
+**Audio**: AAC, AAC-LATM, MP1 / MP2 / MP3, AC-3, E-AC-3, AC-4, DTS, DTS-HD, TrueHD, MLP, FLAC, ALAC, APE, Vorbis, Opus, WMA v1 / v2 / Pro / Lossless / Voice, WavPack, TTA, Musepack (MPC7 / MPC8), Shorten, TAK, RealAudio (Cook, RA-144, RA-288, ATRAC), AMR-NB / AMR-WB, Speex, Nellymoser, QDM2, S302M, the full PCM family (including LPCM / Blu-ray / DVD), ADPCM variants
 
 ### Subtitles
 
@@ -105,9 +109,9 @@ SubRip (SRT), ASS, SSA, WebVTT, MOV text, MicroDVD, MPL2, SAMI, RealText, Subvie
 
 HTTP, HTTPS, HLS, MPEG-DASH, RTMP, RTMPS, RTMPE, RTP, SRTP, UDP, FTP, AES-128 encrypted HLS
 
-### Images
+### Formats outside the browser
 
-JPEG, PNG, BMP, GIF, QOI, PAM / PBM / PGM / PPM
+The playback engine can also decode **audio-only files** (FLAC, APE, WAV, AIFF, CAF, MP3, AC-3, DTS and more) and **images** (JPEG, PNG, BMP, GIF, QOI, PAM / PBM / PGM / PPM). FPV is a video player: the browser does not list these files and they cannot be tapped to play.
 
 ---
 
