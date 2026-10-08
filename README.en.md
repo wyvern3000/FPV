@@ -126,7 +126,7 @@ Only an arm64-v8a build is provided.
 
 ### Adding a source
 
-1. Open the **Browser** tab
+1. Tap the **folder icon** in the top-right to open the Browser
 2. Tap the **plus** button, then pick a source type
 3. Enter the address and credentials, then save
 4. Tap the source to browse its files
